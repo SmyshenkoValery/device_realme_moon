@@ -21,9 +21,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit common Octavi configurations
 $(call inherit-product, vendor/octavi/config/common.mk)
 
-#Gapps
-WITH_GAPPS=true
-
 # Inherit from device makefile
 $(call inherit-product, device/realme/moon/device.mk)
 
