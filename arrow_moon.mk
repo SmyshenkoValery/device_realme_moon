@@ -24,6 +24,9 @@ $(call inherit-product, vendor/arrow/config/common.mk)
 # Inherit from device makefile
 $(call inherit-product, device/realme/moon/device.mk)
 
+# Lawnchair
+$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := arrow_moon
 PRODUCT_DEVICE := moon
