@@ -27,11 +27,14 @@ $(call inherit-product, device/realme/moon/device.mk)
 # Lawnchair
 $(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
 
+#Gapps
+WITH_GAPPS := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := arrow_moon
 PRODUCT_DEVICE := moon
 PRODUCT_BRAND := realme
-PRODUCT_MODEL := Realme G95 Series
+PRODUCT_MODEL := Realme G85 Series
 PRODUCT_MANUFACTURER := realme
 
 TARGET_BOOT_ANIMATION_RES := 720
